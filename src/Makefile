@@ -8,10 +8,10 @@
 #              (NOTE: Don't change lines 3 and 4!)
 #  Note:  you may need to remove -DNCFPLUS if you use an old version of netcdf
 #
-#OUTPUTINC = -I$(NETCDF)/include
-#OUTPUTLIB = -L$(NETCDF)/lib
-#OUTPUTOPT = -DNETCDF -DNCFPLUS
-#LINKOPTS  = -lnetcdf -lnetcdff
+OUTPUTINC = -I$(NETCDF)/include
+OUTPUTLIB = -L$(NETCDF)/lib
+OUTPUTOPT = -DNETCDF -DNCFPLUS
+LINKOPTS  = -lnetcdf -lnetcdff
 #-----------------------------------------------------------------------------
 
 
@@ -76,10 +76,10 @@
 #CPP  = cpp -C -P -traditional -Wno-invalid-pp-token -ffreestanding
 #-----------------------------------------------------------------------------
 #  multiple processors, distributed memory (MPI), GNU compiler
-#FC = mpif90
-#OPTS = -ffree-form -ffree-line-length-none -O2 -finline-functions
-#CPP  = cpp -C -P -traditional -Wno-invalid-pp-token -ffreestanding
-#DM = -DMPI
+FC = mpif90
+OPTS = -ffree-form -ffree-line-length-none -O2 -finline-functions
+CPP  = cpp -C -P -traditional -Wno-invalid-pp-token -ffreestanding
+DM = -DMPI
 #-----------------------------------------------------------------------------
 #  multiple processors, shared memory (OpenMP), GNU compiler
 #FC   = gfortran
