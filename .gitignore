@@ -1,0 +1,5 @@
+*.mod
+*.f90
+*.o
+*.exe
+onefile.F
